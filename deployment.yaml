@@ -1,0 +1,7 @@
+deployments:
+- name: taxi_local_data
+  entrypoint: homework3/Q3.py:main_flow_local
+- name: taxi_s3_data
+  entrypoint: homework3/Q4.py:main_flow_s3
+  work_pool:
+    name: zoompool
